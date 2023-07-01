@@ -1,0 +1,353 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.my-navbar{
+    border-bottom: 1px solid #eeeeee;
+    height: 86px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.blinkit-logo{
+    border-right: 1px solid #eeeeee;
+    padding-right: 30px;
+    padding-left: 10px;
+    width: 178px;
+    height: 86px;
+    margin: 0px;
+    justify-content: center;
+    padding-top: 27px;
+}
+.blinkit-logo:hover{
+    background-color: #eeeeee;
+}
+.location h6{
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 10px;
+    margin-top: 7px;
+    /* align-items: center; */
+    cursor: pointer;
+}
+.location p, i{
+    cursor: pointer;
+}
+.search-bar{
+    background-color: #f8f8f8;
+    width: 40vw;
+    border-radius: 10px;
+    border: #eeeeee;
+    cursor: pointer;
+}
+.search-bar input{
+    background-color: #f8f8f8;
+    width: 85%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.search-bar i{
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.login{
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+#my-cart{
+    color: white;
+    /* font-weight: 5; */
+    background-color: #0C831F;
+    font-style: bold;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+ /* #my-cart b:hover{ 
+    animation: name 1.5s ease;
+}
+@keyframes name {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} */
+#my-cart i{
+    margin-right: 5px;
+    
+}
+#my-cart i:hover{
+    animation: cart 1.5s ease;
+}
+@keyframes cart{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.paanCorner-img{
+    display: flex;
+    justify-content: center;
+    max-width: 85vw;
+    margin-inline: auto;
+}
+.card-img{
+    display: flex;
+    height: 190px;
+    /* width: 100%; */
+    /* margin-inline: auto; */
+    max-width: 85vw;
+    /* margin-top: 10px; */
+    /* justify-content: center; */
+    overflow: auto;
+    /* margin-left: 108px; */
+    margin-top: 10px;
+    margin-inline: auto;
+}
+/* ::-webkit-scrollbar{
+    display:none;
+} */
+.card-list{
+    /* width: 100%; */
+    width: 85vw;
+    margin-inline: auto;
+    white-space: nowrap;
+    justify-content: center;
+}
+.card-list div{
+    display: inline-block;
+    /* margin: 10px; */
+}
+.first-card{
+    margin-right: 10px;
+}
+.smallCard-img{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 97vw;
+    margin-inline: auto;
+    align-items: center; */
+
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-inline: auto;
+    /* margin-left: 2px; */
+    margin-left: 95px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* .first-10{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 100%;
+}
+.second-10{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 100%;
+} */
+.cards{
+    display: flex;
+    overflow-x: auto;
+    height: 319px;
+    width: 84vw;
+    margin-left: 90px;
+}
+
+.my-product-card{
+    /* border: 1px solid black; */
+    margin-inline: 12px;
+    margin-bottom: 0px;
+    max-width: 85vw;
+    height: 280px;
+    margin-top: 15px;
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.my-product-card img{
+    margin: 0px 18px;
+}
+.time{
+    font-weight: 700;
+    font-size: 9px;
+    background-color: #e3dfdf;
+    text-transform: uppercase;
+    width: 60px;
+    padding: 1px 6px;
+    margin-left: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-name{
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+    /* font-family: 'Okra' ,'Helvetica'; */
+    font-size: 13px;
+    width: 100%;
+    height: 36px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 18px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.weight{
+    color: #666;
+    font-size: 12px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.product-price{
+    margin-left: 15px;
+    /* color: rgb(31, 31, 31); */
+    font-weight: 600;
+    font-size: 12px;
+    padding-right: px;
+    cursor: pointer;
+}
+s{
+    color: #828282;
+}
+#added{
+    width: 66px;
+    height: 31px;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #F7FFF9;
+    border-radius: 5px;
+    color: #0C831F;
+    border: 1px solid #0C831F;
+    margin:0px 20px;
+    cursor: pointer;
+}
+.card-heading{
+    color: rgb(28, 28, 28);
+    font-size: 24px;
+    /* font-family: Okra-Medium; */
+    font-weight: 600;
+    width: 97vw;
+    padding-left: 100px;
+}
+.name{
+    display: flex;
+    /* width: 1000px;
+    height: 500px; */
+}
+.made-by{
+    max-width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* justify-content: center; */
+    text-align: center;
+    padding-inline: 500px;
+    font-weight: 600;
+    font-size: 17px;
+}
+@media (min-width:200px) and (max-width:768px){
+    .search-bar{
+        display: none;
+    }
+    #my-cart{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .location{
+        padding-top:40px;
+        padding-left: 20px;
+        display: flex;
+    }
+    .location p{
+        padding-top: 30px;
+        padding-left: 12px;
+    }
+    .blinkit-logo{
+        width: 140px;
+        margin-left: 0px;
+    }
+    .card-img{
+        max-width: 280px;
+        margin-inline: auto;
+        /* justify-content: center; */
+    }
+    .smallCard-img{
+        display: flex;
+        /* grid-template-columns: repeat(3,1fr); */
+        flex-wrap: wrap;
+        margin-inline: auto;
+
+    }
+    .cards{
+        max-width: 200px;
+        /* height: 500px; */
+        margin-inline: auto;
+    }
+    .my-product-card{
+        height: 320px;
+    }
+    .card-heading{
+        /* display: flex; */
+        /* margin-inline: auto; */
+        padding-left: 70px;
+        padding-bottom: 15px;
+    }
+    .row{
+        display: flex;
+          margin-right: 0px;
+          float: left;
+    }
+    .product-price{
+        display: inline;
+    }
+    #added{
+        /* display: flex; */
+        /* justify-content: center; */
+        margin-left: 70px;
+    }
+    .name{
+        display: flex;
+        max-width: 50vw;
+        height: 200px;
+        margin-left: 0px;
+    }
+    .made-by{
+        width: 100px;
+        z-index: 1000;
+        padding-left: 140px;
+        padding-top: 30px;
+        padding-inline: auto;
+    }
+}
